@@ -1,0 +1,15 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class NewBehaviourScript : MonoBehaviour
+{
+    float speed = 10f;
+    // Start is called before the first frame update
+ 
+    // Update is called once per frame
+    void Update()
+    {
+        transform.position += transform.forward * Time.deltaTime * speed;
+    }
+}
